@@ -7,7 +7,22 @@
 </head>
 <body>
   <div id="app">
+    <p>{{message}}</p>
+    <p>{{name}}</p>
+    <p>{{myData}}</p>
+    <button @click="messge = 'ボタンから変更'">変更</button>
   </div>
+
+  <!-- #52
+  <div id="app1">
+    <p>{{message}}</p>
+  </div>
+
+  <div id="app2">
+    <p>{{message}}</p>
+    <button @click="changeMessge1">インスタンス1のmessageを変更</button>
+  </div> -->
+
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -25,8 +25,8 @@
 <details><summary>section4</summary>
   <div>
     <ul>
-      <li>#</li>
-      <li>#</li>
+      <li>#52外側からVueインスタンスにアクセスする方法</li>
+      <li>#57$mountメソッドを使用して、elプロパティの代わりにする</li>
       <li>#</li>
       <li>#</li>
     </ul>
