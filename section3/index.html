@@ -2,60 +2,53 @@
 <html lang="jp">
 <head>
   <meta charset="UTF-8">
-  <title>My Vue App</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>超Vue.js</title>
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
 </head>
-<body><!---->
-
+<body>
+  <!-- #48 -->
   <div id="app">
-    <h1 :style="[styleObject,baseStyles]">Hello</h1>
+    <ul>
+      <div v-for="fruit in fruits" :key="fruit">
+        <p>{{fruit}}</p>
+        <input type="text">
+      </div>
+    </ul>
+    <button @click="remove">先頭を削除</button>
   </div>
-
-  <!-- #32
-  <div id="app">
-    <h1 :style="styleObject">Hello</h1>
-  </div> -->
-
-  <!-- #31
-  <div id="app">
-    <h1 :style="{color:textColor, 'background-color':bgColor}">Hello</h1>
-  </div> -->
+  <!--:keyをつけないと、一意にならず、ずれていく-->
   
-  <!-- #30
-  <div id="app">
-    <h1 :class="classObject">Hello</h1>
-    <button @click="isActive=!isActive">切り替え</button>
-
-    <h1 :class="[{red: isActive},bg]">Hello</h1>
+  <!-- #45 -->
+  <!-- <div id="app">
+    <template v-for="fruit in fruits">
+      <ul>
+        <li>{{fruit}}</li>
+        <hr>
+      </ul>
+    </template>
   </div> -->
+  <!--divタグを使うと構造が複雑になる-->
 
-  <!-- #29
-  <div id="app">
-    <h1 :class="classObject">Hello</h1>
-    <button @click="isActive=!isActive">切り替え</button>
+  <!-- #44 -->
+  <!-- <div id="app">
+    <ul>
+      <li v-for="(fruit,index) in fruits">{{index}}番目の{{fruit}}</li>
+    </ul>
+    <ul>
+      <li v-for="(value,key,index) in object">{{index}}.{{key}}-{{value}}</li>
+    </ul>
+  </div> --><!--第２引数はkey、第３引数はindex -->
+
+  <!-- #39 -->
+  <!-- <div id="app">
+    <template v-if="ok">
+      <p>Hello</p>
+      <p>GoodBye</p>
+      <p>おはよう</p>
+    </template>
+    <button @click="ok=!ok">ボタン</button>
   </div> -->
-<!--「bg-blueの時のようにケバブケース-には、''がいるので注意」-->
-
- <!-- #28
-  <div id="app">
-    <p>{{ counter }}</p>
-    <button @click="countUp">+1</button>-->
-    <!--""の中は()はつけなくてよい。（）をつけないと、メソッドイベントハンドラーとして、メソッドの名前でvue扱いになる-->
-    <!--<button @click="countUp()">+1</button>-->
-    <!--""の中は()はつけなくてよい。（）をつけると、インラインメソッドハンドラーになりjs式扱いになる-->
-    <!--<p>{{ doubleCouneterComputed }}</p>-->
-    <!--computedには、()はつけない。プロパティのようにふるまう-->
-    <!--<p>{{ doubleCouneterMethod() }}</p>-->
-    <!--methodsには、必ず()をつける-->
-  <!--</div> -->
-  <!--{{}}にはmethodsか、computedかはっきりさせるため、()の判別が必要になる-->
-
-  <!--#27 
-    <div id="app">
-    <p>{{ counter }}</p>
-    <button @click="counter+=1">+1</button>
-    <p>{{ lessThanThree }}</p>
-  </div> -->
+  <!--templateタグは、検証した時、表示されない-->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
   <script src="js/main.js"></script>
 </body>
