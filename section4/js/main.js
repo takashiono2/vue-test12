@@ -1,5 +1,6 @@
 (function(){
   'use strict';
+
   var data = {
     message: 'こんにちは',
     name: 'よしぴー'
@@ -13,9 +14,61 @@
         return this.$data;
       }
     }
-  });
-  vm.$mount('#app');
-  //$mountはeleの代わりに付け足せる。
+    });
+    vm.$mount('#app');
+
+  new Vue({
+    // el:'#app2',
+    data:{
+      name: 'よしぴー'
+    },
+    template: '<h1>こんにちは{{name}}です</h1>'
+  }).$mount('#app2');;
+
+  // #58
+  // var data = {
+  //   message: 'こんにちは',
+  //   name: 'よしぴー'
+  // }
+  
+  // var vm = new Vue({
+  //   // el: '#app',
+  //   data: data,
+  //   computed: {
+  //     myData: function(){
+  //       return this.$data;
+  //     }
+  //   }
+  //   });
+  //   vm.$mount('#app');
+
+  // new Vue({
+  //   // el:'#app2',
+  //   data:{
+  //     name: 'よしぴー'
+  //   },
+  //   template: '<h1>こんにちは{{name}}です</h1>'
+  // }).$mount('#app2');;
+  //#app1では、変数vmに対して、$mountでマウントしていたが、直接つけることも可能。
+  //templateプロパティは、文をそのまま反映させる。
+
+  // #57
+  // var data = {
+  //   message: 'こんにちは',
+  //   name: 'よしぴー'
+  // }
+  
+  // var vm = new Vue({
+  //   // el: '#app',
+  //   data: data,
+  //   computed: {
+  //     myData: function(){
+  //       return this.$data;
+  //     }
+  //   }
+  // });
+  // vm.$mount('#app');
+  // //$mountはeleの代わりに付け足せる。
 
   //#52
   // var vm1 = new Vue({
