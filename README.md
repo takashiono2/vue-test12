@@ -29,15 +29,18 @@
       <li>#57$mountメソッドを使用して、elプロパティの代わりにする</li>
       <li>#58templateプロパティを使って、文字列のみでテンプレートを書く</li>
       <li>#59render(描画)関数を使用して、仮想ノードを作ってDOMの描画を行う</li>
-      <li>#</li>
-      <li>#</li>
     </ul>
   </div>
 </details>
 <details><summary>section6</summary>
   <div>
     <ul>
-      <li></li>
+      <li>#75コンポーネントを使用して、再利用可能なVueインスタンスを作る</li>
+      <li>#76dataはなぜコンポーネントにおいて関数である必要があるのか</li>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
     </ul>
   </div>
 </details>
