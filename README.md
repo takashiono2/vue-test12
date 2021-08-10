@@ -55,6 +55,9 @@
 <details><summary>section8</summary>
   <div>
     <ul>
+      <li>#101slotを使うことで、子コンポーネントにhtmlのコードを渡すことができる</li>
+      <li>#102slotは親と子のどちらのスコープにアクセスできるのか</li>
+      <li>#104【名前付きスロット】v-slotを使用すれば、複数のslotを使用して複雑なデータを渡すことができる</li>
       <li>#</li>
     </ul>
   </div>
