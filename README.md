@@ -41,7 +41,20 @@
       <li>#82シングルファイルコンポーネントをローカル登録する</li>
       <li>#83componentsフォルダを作成して、綺麗なフォルダ構造を作る</li>
       <li>#85スコープ付きCSSと、Vue.jsがそれをどのように実装しているのかを理解する</li>
-      <li>#</li>
+    </ul>
+  </div>
+</details>
+<details><summary>section7</summary>
+  <div>
+    <ul>
+      <li>#92バリデーションを使用して、プロパティに意図しない値が渡らないようにする</li>
+      <li>#94$emitメソッドを使って、子から親にデータを渡す</li>
+    </ul>
+  </div>
+</details>
+<details><summary>section8</summary>
+  <div>
+    <ul>
       <li>#</li>
     </ul>
   </div>
