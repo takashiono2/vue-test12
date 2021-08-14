@@ -140,3 +140,14 @@
     </ul>
   </div>
 </details>
+<details><summary>section12</summary>
+  <div>
+    <ul>
+      <li>#183VueRouterとは何をするものなのか。実際にURLによって表示する内容を変える</li>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+    </ul>
+  </div>
+</details>
