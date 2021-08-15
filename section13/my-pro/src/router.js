@@ -1,7 +1,11 @@
 import Vue from "vue";//vueをインポート
 import Router from "vue-router";//vueルーターをインポート
-import Home from "./views/Home.vue";//コンポーネントを使うためインポート
-import Users from "./views/Users.vue";//コンポーネントを使うためインポート
+import Home from "./views/Home.vue";
+import Users from "./views/Users.vue";
+import UsersPosts from "./views/UsersPosts.vue";
+import UsersProfile from "./views/UsersProfile.vue";
+import HeaderHome from "./views/HeaderHome.vue";
+import HeaderUsers from "./views/HeaderUsers.vue";
 
 //プラグインしたルーターを使います宣言
 Vue.use(Router);
@@ -9,8 +13,33 @@ Vue.use(Router);
 export default new Router({
   mode: 'history',
   routes: [
-    {path:'/',component:Home},
-    {path:'/users/:id',component:Users}
+    { path:'/',
+      components: {
+        default: Home,
+        header: HeaderHome
+      } 
+    },
+    { path:'/users/:id',
+      components: {
+        default: Users,
+        header: HeaderUsers
+      },
+     props:{ 
+       default: true,
+       header: false
+      },
+     children:[
+      {
+        path: "posts",
+        componen: UsersPosts 
+      },
+      {
+        path: "profile",
+        component: UsersProfile,
+        name: "users-id-profile"
+      }
+     ]
+    }
   ]
 });
 
