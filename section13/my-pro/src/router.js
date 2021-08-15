@@ -6,6 +6,7 @@ import UsersPosts from "./views/UsersPosts.vue";
 import UsersProfile from "./views/UsersProfile.vue";
 import HeaderHome from "./views/HeaderHome.vue";
 import HeaderUsers from "./views/HeaderUsers.vue";
+// import {resolve} from 'url';
 
 //プラグインしたルーターを使います宣言
 Vue.use(Router);
@@ -39,8 +40,28 @@ export default new Router({
         name: "users-id-profile"
       }
      ]
+    },
+    {
+      path: "/hello",
+      redirect:"/"
     }
-  ]
+  ],
+  scrollBehavior(to,from,savedPosition){
+    return new Promise(resolve => {
+      this.app.$root.$once('triggerScroll',()=>{
+        let position = {x:0,y:0};
+        if(savedPosition){
+          position = savedPosition;
+        }
+        if(to.hash){
+          position = {
+            selector: to.hash
+          };
+        }
+        resolve(position);
+     });
+   });
+  }
 });
 
 

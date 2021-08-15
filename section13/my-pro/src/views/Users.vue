@@ -9,28 +9,26 @@
     <!-- <router-link :to="'/users/'+(Number(id)+1)+'/profile'">次へ</router-link> -->
     <!-- <router-link :to="{name: 'users-id-profile', params:{id:(Number(id)+1) }}">次へ</router-link> -->
     <router-link :to="'/users/'+(Number(id)+1)+'/profile'">次へ</router-link>
-    <router-link :to="{
-      name: 'users-id-profile', 
-      params:{id:(Number(id)+1)},
-      query:{
-        lang:'ja',
-        page:(Number(id)+1)
-      }
+    <router-view></router-view>
+    <div style="height: 1400px;"></div>
+    <router-link 
+      id="next-user"
+      :to="{
+        name: 'users-id-profile', 
+        params:{id:(Number(id)+1)},
+        query:{
+          lang:'ja',
+          page:(Number(id)+1)
+        },
+        hash: '#next-user'
       }"
     >次へ</router-link>
-    <router-view></router-view>
+    
   </div>
 </template>
 
 <script>
 export default{
   props:['id'],
-  watch:{
-    $route(to,from){
-      console.log(to);
-      console.log(from);
-      console.log('$routeが変わった');
-    }
-  }
-}
+};
 </script>
