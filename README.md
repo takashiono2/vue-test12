@@ -140,7 +140,7 @@
     </ul>
   </div>
 </details>
-<details><summary>section12</summary>
+<details><summary>section13</summary>
   <div>
     <ul>
       <li>#183VueRouterとは何をするものなのか。実際にURLによって表示する内容を変える</li>
@@ -168,6 +168,21 @@
       <li>#205特定のページ遷移前に、特定の処理をするためのbeforeEnterガードの説明</li>
       <li>#206コンポーネントに指定できる３つのナビゲーションガード</li>
       <li>#207遅延ローディングをすることで、必要な時にデータを取ってくる処理を書く</li>
+    </ul>
+  </div>
+</details>
+<details><summary>section14</summary>
+  <div>
+    <ul>
+      <li>#211Vuexのstateを使って、実際にコンポーネントから値をとってくる</li>
+      <li>#212gettersを使って、ストアに算出プロパティを作る</li>
+      <li>#213mapGettersヘルパーで、効率よくgettersをコンポーネントに追加する</li>
+      <li>#214mutationとcommitを使って、状態(state)を変える場所を一つに絞りデータの予測と追跡をしやすくする</li>
+      <li>#215mapMutaionsヘルパーで、効率よくmutationsをコンポーネントに追加する</li>
+      <li>#216どうしてmutationでは同期的な処理しか書けないかを理解する</li>
+      <li>#217actionをdispatchして、非同期処理を含む処理を扱いながらミューテーションをコミットする</li>
+      <li>#</li>
+      <li>#</li>
     </ul>
   </div>
 </details>
