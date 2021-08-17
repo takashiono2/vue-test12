@@ -28,16 +28,16 @@
 
 <script>
 // import { mapMutations } from "vuex";
-
+import { mapActions } from "vuex";
 export default{
-  methods:{
-    increment(){
-      this.$store.dispatch('increment',2)
-    }
-  }
   // methods:{
-  //   ...mapMutations(["increment","decrement"])
+  //   increment(){
+  //     this.$store.dispatch('increment',2)
+  //   }
   // }
+  methods:{
+    ...mapActions(["increment","decrement"])
+  }
 };
 </script>
 
