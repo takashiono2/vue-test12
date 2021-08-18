@@ -195,9 +195,14 @@
 <details><summary>section17</summary>
   <div>
     <ul>
-      <li>#</li>
-      <li>#</li>
-      <li>#</li>
-      <li>#</li>
+      <li>#231axiosをインストールし、プロジェクトをセットアップする</li>
+      <li>#232FirebaseのCloud Firestoreを使ってバックエンドサーバーを用意する</li>
+      <li>#233postメソッドを使ってデータをサーバーに送る</li>
+      <li>#234getメソッドを使ってサーバーのデータを取得する</li>
+      <li>#235サーバーから取得したデータを表示する</li>
+      <li>#236FirebaseのSDKを使わず、REST APIを使っていることに注意する</li>
+      <li>#238baseURLやheaderなど、全てのリクエストに同じ設定をつける方法を学ぶ</li>
+      <li>#239Interceptorsを使って、thenやcatchの前に共通で行いたい処理を書く</li>
+      <li>#240axios.create()を使って、新しくaxiosのインスタンスを生成する</li>
     </ul>
   </div>
