@@ -206,3 +206,12 @@
       <li>#240axios.create()を使って、新しくaxiosのインスタンスを生成する</li>
     </ul>
   </div>
+<details><summary>section18</summary>
+  <div>
+    <ul>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+      <li>#</li>
+    </ul>
+  </div>
