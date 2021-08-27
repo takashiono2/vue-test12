@@ -209,9 +209,9 @@
 <details><summary>section18</summary>
   <div>
     <ul>
-      <li>#</li>
-      <li>#</li>
-      <li>#</li>
-      <li>#</li>
+      <li>#243ログイン認証がSPA上でどのように実現されるかを理解する</li>
+      <li>#244ログイン認証を行うために、Firebase Authenticationとプロジェクトのセットアップをする</li>
+      <li>#245ユーザー登録の機能を実装する</li>
+      <li>#246ユーザーログインの機能を実装する</li>
     </ul>
   </div>

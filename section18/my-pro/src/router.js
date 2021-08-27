@@ -4,7 +4,7 @@ import Comments from './views/Comments.vue';
 import Login from './views/Login.vue';
 import Register from './views/Register.vue';
 
-Vue.Use(Router);
+Vue.use(Router);
 
 export default new Router({
   mode: 'history',
