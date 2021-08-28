@@ -37,9 +37,17 @@ export default {
       comment: '',
       posts: []
     };
+  },computed:{
+    idToken(){
+      return this.$store.getters.idToken;
+    }
   },
   created() {
-    axios.get('/comments').then(response => {
+    axios.get('/comments',{
+      headers: {
+        Authorization: `Bearer ${token}`,
+      }
+    }).then(response => {
       this.posts = response.data.documents;
     });
   },
@@ -53,6 +61,10 @@ export default {
           comment: {
             stringValue: this.comment
           }
+        }
+      },{      
+        headers: {
+          Authorization: `Bearer ${token}`,
         }
       });
       this.name = '';
