@@ -1,21 +1,19 @@
 <template>
   <div id="app">
-    <h1>{{ message }}</h1>
-    <HelloVuex></HelloVuex>
+    <UserList></UserList>
   </div>
 </template>
 
 <script>
-import HelloVuex from './components/HelloVuex.vue'
+import UserList from './components/UserList.vue'
 export default {
   name: 'app',
-  computed:{
-    message(){
-      return this.$store.state.message
-    }
-  },
+  // data : function(){
+  //   return {
+  //   }
+  // },
   components:{
-      HelloVuex
+      UserList
   }
 }
 </script>
