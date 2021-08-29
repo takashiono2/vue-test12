@@ -1,19 +1,23 @@
 <template>
-  <ul>
-    <li 
-    v-for="user in users" 
-    :key="user.name"
-    >{{ user.name }} ({{ user.email }})
-    </li>
-  </ul>
+  <div id="app">
+  	<h1>ユーザ一覧</h1>
+    <div v-for="user in users" :key=user.id>
+      {{ user.name }}
+    </div>
+  </div>
 </template>
 
 <script>
+
 export default {
-  computed:{
-    users(){
-      return this.$store.getters.users;
-    }
+  name: 'app',
+  computed : {
+  	users : function(){
+  		return this.$store.state.users
+  	}
+  },
+  mounted(){
+    this.$store.dispatch('getUsers')
   }
 }
 </script>
